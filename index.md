@@ -10,9 +10,12 @@ There should be whitespace between paragraphs.
 
 There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
 
-# Header 1
+# Sobre o Spotify
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+Quando o Spotify foi lançado em 2008, a indústria musical sofreria mudanças abruptas e adaptações na forma como se consome e se comercializa música - sendo ela por parte de artistas, consumidores ou produtores. Atualmente com mais de 100 milhões de faixas e 5 milhões de episódios de Podcasts, considerando que o consumidor pode usufruí-los a partir de um plano gratuito ou pago, que conta com qualidade de som aprimorada e uma experiência de sessão mais completa, podendo escutar qualquer título mesmo offline, o Spotify é, sem dúvidas, o serviço de streaming musical mais popular, ainda mais que o Apple Play, contando com mais de 500 milhões de usuários registrados e 205 milhões de assinantes em mais de 180 países.
+
+O modelo de negócios da plataforma se baseia na venda de assinaturas premium e na exibição de anúncios para os usuários que usufruem do plano mais básico. Além disso, também funciona como uma forma de complemento de renda aos artistas, além de permitir que suas obras alcancem mais destaque e público - o que se dá principalmente a partir do sistema de recomendações da plataforma e das playlists públicas. A cada dez plays em alguma faixa, o Spotify repassa US$ 0,04 ao artista ou a sua gravadora 
+
 
 ## Header 2
 
