@@ -17,11 +17,9 @@ Quando o Spotify foi lançado em 2008, a indústria musical sofreria mudanças a
 O modelo de negócios da plataforma se baseia na venda de assinaturas premium e na exibição de anúncios para os usuários que usufruem do plano mais básico. Além disso, também funciona como uma forma de complemento de renda aos artistas, além de permitir que suas obras alcancem mais destaque e público - o que se dá principalmente a partir do sistema de recomendações da plataforma e das playlists públicas. A cada dez plays em alguma faixa, o Spotify repassa US$ 0,04 ao artista ou a sua gravadora 
 
 
-## Header 2
+## Arquitetura
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+Quando em janeiro de 2023 o cantor canadense Abel Makkonen, conhecido como The Weeknd, ultrapassou a marca dos 93 milhões de ouvintes mensais na plataforma, ultrapassando nomes como Ed Sheeran (86m) e Taylor Swift (81.21m), quebrando o recorde prévio da plataforma e sendo estabelecido como o maior nome da indústria por determinado tempo, deve-se pensar nas características internas do Spotify; isso é, sua arquitetura e suas peculiaridades que permitem com que tantos usuários utilizem a plataforma simultânea e periodicamente sem que o sistema colapse mediante a esses números. Nesse ponto, vale também considerar que o Spotify possui uma versão Web, uma Desktop e outra APK.
 
 ### Header 3
 
