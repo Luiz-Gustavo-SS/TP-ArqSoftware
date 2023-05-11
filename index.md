@@ -21,6 +21,23 @@ O modelo de negócios da plataforma se baseia na venda de assinaturas premium e 
 
 Quando em janeiro de 2023 o cantor canadense Abel Makkonen, conhecido como The Weeknd, ultrapassou a marca dos 93 milhões de ouvintes mensais na plataforma, ultrapassando nomes como Ed Sheeran (86m) e Taylor Swift (81.21m), quebrando o recorde prévio da plataforma e sendo estabelecido como o maior nome da indústria por determinado tempo, deve-se pensar nas características internas do Spotify; isso é, sua arquitetura e suas peculiaridades que permitem com que tantos usuários utilizem a plataforma simultânea e periodicamente sem que o sistema colapse mediante a esses números. Nesse ponto, vale também considerar que o Spotify possui uma versão Web, uma Desktop e outra APK.
 
+## Microsserviços
+
+A arquitetura do Spotify é baseada em microsserviços, como explicado por Kevin Goldsmith, CTO da empresa. Em suma, uma arquitetura de microsserviços implica na separação independente de serviços/componentes, cada qual com sua funcionalidade específica, o que facilita em quesitos de desenvolvimento de software como manutenabilidade, escalabilidade, desempenho, etc.
+O Spotify está entre as empresas pioneiras na utilização de microsserviços e no aproveitamento de seus inúmeros benefícios, permitindo que a plataforma desenvolva e disponibilize novas funcionalidades periodicamente, visto que cada serviço ou funcionalidade estão contidos em módulos específicos. A escolha desse modelo arquitetural também auxilia o Spotify a lidar com enormes volumes de dados e requisições, além de possibilitar a atuação de várias equipes em diferentes serviços. Dessa forma, é correto dizer que a escolha arquitetural implicou na popularidade e sucesso da empresa e do serviço.
+
+O backend do Spotify necessita de inúmeros serviços/módulos, como verificação de usuário, recomendação de músicas, sistema de pesquisa, entre outros.
+
+![image](https://github.com/Luiz-Gustavo-SS/TP-ArqSoftware/assets/84593164/bcf90a62-96fb-4d8c-8394-de17e417c043)
+
+
+![image](https://github.com/Luiz-Gustavo-SS/TP-ArqSoftware/assets/84593164/f353ba2d-f22b-45ad-b569-596c14bdc8d4)
+
+
+## Tecnologias
+
+Geralmente esses serviços são escritos em Python e Java e se comunicam entre si via protocólo Hermes, desenvolvido pela própria empresa.
+
 ### Header 3
 
 ```js
