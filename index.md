@@ -21,7 +21,17 @@ A plataforma também possui uma arquitetura separada para cuidar das questões r
 A arquitetura do Spotify é baseada em microsserviços, como explicado por Kevin Goldsmith, CTO da empresa. Em suma, uma arquitetura de microsserviços implica na separação independente de serviços/componentes, cada qual com sua funcionalidade específica, o que facilita em quesitos de desenvolvimento de software como manutenabilidade, escalabilidade, desempenho, etc.
 O Spotify está entre as empresas pioneiras na utilização de microsserviços e no aproveitamento de seus inúmeros benefícios, permitindo que a plataforma desenvolva e disponibilize novas funcionalidades periodicamente, visto que cada serviço ou funcionalidade estão contidos em módulos específicos. A escolha desse modelo arquitetural também auxilia o Spotify a lidar com enormes volumes de dados e requisições, além de possibilitar a atuação de várias equipes em diferentes serviços. Dessa forma, é correto dizer que a escolha arquitetural implicou na popularidade e sucesso da empresa e do serviço.
 
-O backend do Spotify necessita de inúmeros serviços/módulos, como verificação de usuário, recomendação de músicas, sistema de pesquisa, entre outros.
+## Backend 
+
+O Spotify utiliza um sistema de backend distribuído para garantir que as solicitações dos usuários sejam processadas de forma eficiente. Os microsserviços se comunicam entre si por meio de APIs, trocando dados e coordenando suas atividades. Essa arquitetura distribuída permite que o Spotify dimensione horizontalmente seus recursos, adicionando mais servidores conforme necessário, para lidar com o crescimento da base de usuários e a demanda.
+
+## Algoritmos de Recomendação
+
+Um dos pontos fortes do Spotify é seu recurso de recomendação de música personalizada. Isso é possível graças a algoritmos avançados que analisam o histórico de escuta do usuário, seus gostos musicais, preferências e dados demográficos para oferecer sugestões relevantes. Esses algoritmos operam em um sistema de aprendizado de máquina que é alimentado continuamente com dados atualizados para refinar ainda mais as recomendações.
+
+## Nas alturas
+
+O Spotify utiliza serviços em nuvem, como o Google Cloud Platform (GCP) e o Amazon Web Services (AWS), para hospedar sua infraestrutura. Essa abordagem permite que o Spotify dimensione seus recursos rapidamente e forneça uma alta disponibilidade dos serviços em todo o mundo, garantindo elasticidade e flexibilidade.
 
 ![image](https://github.com/Luiz-Gustavo-SS/TP-ArqSoftware/assets/84593164/f353ba2d-f22b-45ad-b569-596c14bdc8d4)
 
@@ -30,3 +40,15 @@ O backend do Spotify necessita de inúmeros serviços/módulos, como verificaç�
 
 Geralmente esses serviços são escritos em Python e Java e se comunicam entre si via protocólo Hermes, desenvolvido pela própria empresa.
 O Python é utilizado no back-end, scripts, processos e análise de dados, e aproximadamente 80% dos serviços da plataforma são escritos no mesmo.
+
+## Protocolo Hermes 
+
+O Protocolo Hermes, desenvolvido internamente pelo Spotify, é um conjunto de tecnologias e algoritmos projetados para aprimorar a qualidade do streaming de áudio. Ele foi criado com o objetivo de reduzir a latência, minimizar interrupções e garantir uma reprodução fluida das músicas, independentemente da qualidade da conexão de Internet do usuário.  
+Um dos principais desafios enfrentados pelo Spotify e outros serviços de streaming de música é a variação na qualidade da conexão à Internet dos usuários. Alguns usuários podem ter acesso rápido e estável à Internet, enquanto outros podem enfrentar conexões lentas, instáveis ou com perda de pacotes. O Protocolo Hermes foi desenvolvido para lidar com essas variações e fornecer uma experiência consistente, independentemente da qualidade da conexão.  
+Uma das técnicas utilizadas pelo Protocolo Hermes é o armazenamento em buffer inteligente. Ele monitora constantemente a velocidade da conexão à Internet do usuário e ajusta dinamicamente o tamanho do buffer de áudio para garantir uma reprodução contínua. Se a velocidade da conexão diminuir temporariamente, o buffer será dimensionado adequadamente para evitar interrupções na reprodução. Isso permite que os usuários aproveitem suas músicas sem interrupções irritantes.
+
+## Referências
+
+https://engineering.atspotify.com/
+https://www.techaheadcorp.com/blog/decoding-software-architecture-of-spotify-how-microservices-empowers-spotify/
+https://www.godeltech.com/is-spotify-the-holy-grail-of-software-engineering/
